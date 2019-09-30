@@ -1,0 +1,27 @@
+//Write a program to convert from upper case to lower case and vice versa
+package flowcontrolp7;
+import java.util.Scanner;
+public class FlowControlP7 {
+
+    public static void main(String[] args) {
+         //Request user input
+         Scanner input = new Scanner(System.in);
+         System.out.println("Please enter any char: ");
+         char letter = input.next().charAt(0);
+         
+         //if the character is lowercase then it will be converted to uppercase
+         if(Character.isLowerCase(letter))
+         {
+            char updatedLetter = Character.toUpperCase(letter);
+            System.out.println("Converted version: " + updatedLetter);
+         }
+         //else it converts to lowercase
+         else
+         {
+            char updatedLetter = Character.toLowerCase(letter);
+            System.out.println("Converted version: " + updatedLetter);
+         }
+
+    }
+    
+}
